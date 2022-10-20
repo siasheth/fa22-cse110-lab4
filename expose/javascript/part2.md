@@ -10,4 +10,35 @@
 9. line 11 will cause an error since i was defined using let which means it cannot be called outside the for loop. Thus, i is not defined at line 11.
 10. line 12 will print 3 which is the length of the prices array passed in. The length has been declared as a const and is being called in the same function with no changes being made to the const variable so no errors are caused.
 11. This function will return an array with the discounted prices based on the array of prices and discount provided on line 19. line 19 gave a prices array [100, 200, 300] with the discount as 0.5, so this function will return the array discount which is [50, 100, 150]. There will be no errors caused since discounted was declared on line 3 at the start of the function as a const and is returned on line 16 at the end of the same function. The only changes made to discount were values being pushed into the array thus the const array is not being assigned a new value thus causing no errors.
-12. 
+12. Given the above Object, write the notation for:  (These should be in your part2.md)
+    1.  Accessing the value of the name property in the student object
+    2.  Accessing the value of the Grad Year property in the student object
+    3.  Calling the function for the greeting property in the student object
+    4.  Accessing the name property of the object in the Favorite Teacher property in student
+    5.  Access index zero in the array of the courseLoad property of the student object
+13. Arithmetic
+    1.  ‘3’ + 2
+    2.  ‘3’ - 2
+    3.  3 + null
+    4.  ‘3’ + null
+    5.  true + 3
+    6.  false + null
+    7.  '3' + undefined
+    8.  '3' - undefined
+14. Comparison 
+    1.  ‘2’ > 1
+    2.  ‘2’ < ‘12’
+    3.  2 == ‘2’
+    4.  2 === ‘2’
+    5.  true == 2
+    6.  true === Boolean(2)
+15. Explain the difference between the == and === operators.
+16. js file
+17. x
+18. js file
+19. The output will be:
+1
+4
+3
+2
+This is because line 2 will run first and print 1. Then line 3 and 4 have timeouts set so they will set a timer which executes the console.log in it once the timer expires. Line 5 will run and print 4 since it has no delay or timer set. Then 3 will be printed by line 4 first since the timer is 0ms. After 1000ms, 2 will be printed last by line 3.
