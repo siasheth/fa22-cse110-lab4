@@ -11,20 +11,20 @@
 10. line 12 will print 3 which is the length of the prices array passed in. The length has been declared as a const and is being called in the same function with no changes being made to the const variable so no errors are caused.
 11. This function will return an array with the discounted prices based on the array of prices and discount provided on line 19. line 19 gave a prices array [100, 200, 300] with the discount as 0.5, so this function will return the array discount which is [50, 100, 150]. There will be no errors caused since discounted was declared on line 3 at the start of the function as a const and is returned on line 16 at the end of the same function. The only changes made to discount were values being pushed into the array thus the const array is not being assigned a new value thus causing no errors.
 12. Given the above Object, write the notation for:  (These should be in your part2.md)
-    1.  Accessing the value of the name property in the student object
-    2.  Accessing the value of the Grad Year property in the student object
-    3.  Calling the function for the greeting property in the student object
-    4.  Accessing the name property of the object in the Favorite Teacher property in student
-    5.  Access index zero in the array of the courseLoad property of the student object
+    1. alert(student.name);
+    2. alert(student['Grad Year']);
+    3. alert(student.greeting());
+    4. alert(student['Favourite Teacher'].name);
+    5. alert(student.courseLoad[0]);
 13. Arithmetic
-    1.  ‘3’ + 2
-    2.  ‘3’ - 2
-    3.  3 + null
-    4.  ‘3’ + null
-    5.  true + 3
-    6.  false + null
-    7.  '3' + undefined
-    8.  '3' - undefined
+    1.  ‘3’ + 2 -> '32' because we have a string datatype first so whatever comes after + will be concatenated to the first string. Since integers map to their exact string representation, 2 will stay 2 as a string and be put after 3 to gvie '32'.
+    2.  ‘3’ - 2 -> 1 because you cannot perform subtraction on a string so javascript converts '3' to a number and then subtracts 2 from it to give 1.
+    3.  3 + null -> 3 because 
+    4.  ‘3’ + null -> '3null' because null maps to its exact string representation
+    5.  true + 3 -> 4 because true maps to 1
+    6.  false + null -> 0 because false maps to 0 and so does null
+    7.  '3' + undefined -> '3undefined' because undefined maps to its exact string representation
+    8.  '3' - undefined -> Nan because
 14. Comparison 
     1.  ‘2’ > 1
     2.  ‘2’ < ‘12’
