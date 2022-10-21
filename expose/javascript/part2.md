@@ -26,13 +26,13 @@
     7.  '3' + undefined -> '3undefined' because undefined maps to its exact string representation
     8.  '3' - undefined -> Nan because
 14. Comparison 
-    1.  ‘2’ > 1
-    2.  ‘2’ < ‘12’
-    3.  2 == ‘2’
-    4.  2 === ‘2’
-    5.  true == 2
-    6.  true === Boolean(2)
-15. Explain the difference between the == and === operators.
+    1.  ‘2’ > 1 -> true because
+    2.  ‘2’ < ‘12’ -> false because
+    3.  2 == ‘2’ -> true because
+    4.  2 === ‘2’ -> false because
+    5.  true == 2 -> false because
+    6.  true === Boolean(2) -> true because
+15. The difference between == and === is that the == operator does the type conversion of the operands before comparison, whereas the === operator compares the values as well as the data types of the operands.
 16. js file
 17. x
 18. js file
