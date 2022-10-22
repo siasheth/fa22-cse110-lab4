@@ -19,19 +19,19 @@
 13. Arithmetic
     1.  ‘3’ + 2 -> '32' because we have a string datatype first so whatever comes after + will be concatenated to the first string. Since integers map to their exact string representation, 2 will stay 2 as a string and be put after 3 to gvie '32'.
     2.  ‘3’ - 2 -> 1 because you cannot perform subtraction on a string so javascript converts '3' to a number and then subtracts 2 from it to give 1.
-    3.  3 + null -> 3 because 
+    3.  3 + null -> 3 because null gets converted to 0
     4.  ‘3’ + null -> '3null' because null maps to its exact string representation
     5.  true + 3 -> 4 because true maps to 1
     6.  false + null -> 0 because false maps to 0 and so does null
-    7.  '3' + undefined -> '3undefined' because undefined maps to its exact string representation
-    8.  '3' - undefined -> Nan because
+    7.  '3' + undefined -> '3undefined' because the value before + is a string so whatever comes after + also gets converted to a string and will be concatenated to the first string. Undefined maps to its exact string representation. 
+    8.  '3' - undefined -> NaN because you cannot perform subtraction on a string so javascript converts '3' to a number and then subtracts undefined from it. Undefined as a number is NaN Nan subtracted from anything gives NaN.
 14. Comparison 
-    1.  ‘2’ > 1 -> true because
-    2.  ‘2’ < ‘12’ -> false because
-    3.  2 == ‘2’ -> true because
-    4.  2 === ‘2’ -> false because
-    5.  true == 2 -> false because
-    6.  true === Boolean(2) -> true because
+    1.  ‘2’ > 1 -> true because the string '2' becomes the number 2
+    2.  ‘2’ < ‘12’ -> false because they are both strings so the first character is compared first which is 2 and 1 so 2 should be greater
+    3.  2 == ‘2’ -> true because the string '2' becomes the number 2 
+    4.  2 === ‘2’ -> false because the first is a number and the second is a string so they are not ===
+    5.  true == 2 -> false because true is 1 not 2
+    6.  true === Boolean(2) -> true because they are both the same data type (boolean) and Boolean(2) will return true so they are both true
 15. The difference between == and === is that the == operator does the type conversion of the operands before comparison, whereas the === operator compares the values as well as the data types of the operands.
 16. js file
 17. x

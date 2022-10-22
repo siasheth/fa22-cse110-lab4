@@ -1,0 +1,2 @@
+1. The bug is that num1 and num2 have strings as their values (for eg. if you input 1 and 2 they get stored as "1" and "2"). So result is adding the two numbers are strings which causes the second one to be concanetated to the first rather than the addition of two numbers.
+2. To fix it, I can convert the data type of num1 and num2 to the data type Number while adding them in the let declaration of result. I have shown this in my screenshot (look at line 11).
