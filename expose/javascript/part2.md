@@ -34,7 +34,7 @@
     6.  true === Boolean(2) -> true because they are both the same data type (boolean) and Boolean(2) will return true so they are both true
 15. The difference between == and === is that the == operator does the type conversion of the operands before comparison, whereas the === operator compares the values as well as the data types of the operands.
 16. js file
-17. x
+17. This function will return an array [2,4,6]. This is becasue modifyArray is called with the parameters [1,2,3] and the callback doSoomething. modifyArray takes in the array and loops through each element in it. It then calls doSomething on each element and pushes it to a new array it has declared in the beginning. doSomething multiplies the number passed in by 2 and returns it. Thus, the new array has elements that are double of each element in the old array. newArr = [2,4,6].
 18. js file
 19. The output will be:
 1
